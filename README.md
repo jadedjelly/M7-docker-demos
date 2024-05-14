@@ -57,6 +57,27 @@ docker-compose -f mongo.yaml up
 
 5. You can see during the terminal output, Mongo-Express retarted a few times while it waited to get a connection to the DB
 
+![M7image01.png](assets/M7image01.png)
+
+6. checking localhost:8081 & localhost:3000 again, we can see the app & DB are communicating again
+
+![M7image02.png](assets/M7image02.png)
+![M7image03.png](assets/M7image03.png)
+![M7image04.png](assets/M7image04.png)
+
+7. To shut the containers down, you can run the usual "docker stop " or the below docker-compose will do the same
+
+```bash
+docker-compose -f mongo.yaml down
+```
+
+![M7image05.png](assets/M7image05.png)
+
+8. this command also, removes the containers & networks
+
+
+
+
 
 
 
